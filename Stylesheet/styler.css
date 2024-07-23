@@ -1,0 +1,201 @@
+/* Reset styles */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 30px;
+}
+
+/* Header styles */
+header {
+  background-color: #ff6b6b;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  line-height: 50px;
+}
+
+header h1 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 2.5em;
+  font-family: 'Indie Flower', cursive;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0%;
+  text-align: center;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav a {
+  color: #333333;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+nav a:hover {
+  color: #ff6b6b;
+}
+
+/* Main container styles */
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 20px auto;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Table styles */
+table {
+  width: 90%;
+  margin: 20px auto;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 12px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+th {
+  background-color: #ff6b6b;
+  color: #fff;
+}
+
+/* Button styles */
+button {
+  background-color: #ffb3b3;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1.2em;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ff7675;
+}
+
+/* Footer styles */
+footer {
+  background-color: #ff6b6b;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  margin-top: auto; /* Push the footer to the bottom of the page */
+  width: 100%;
+}
+
+/* Common styles for form containers */
+.container {
+  background-color: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.container img {
+  width: 100%;
+  height: auto;
+}
+
+#Login_innerForm,
+#res_innerForm {
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+/* Form styles */
+form {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  color: #333333;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+input[type="submit"] {
+  background-color: #ff6b6b;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1.2em;
+}
+
+input[type="submit"]:hover {
+  background-color: #ff7675;
+}
+
+a {
+  color: #333333;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 90%;
+  }
+
+  form {
+    max-width: 90%;
+  }
+
+  th, td {
+    display: inline-block;
+    width: calc(20% - 2px); /* Adjust width as needed (20% for each cell) */
+    margin-right: 2px; /* Add spacing between cells */
+    vertical-align: top; /* Align elements at the top */
+    box-sizing: border-box; /* Include padding and border in the width */
+    text-align: left; /* Align text to the left */
+    padding: 1px; /* Add padding */
+}
+}
